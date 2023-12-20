@@ -1,0 +1,268 @@
+#member_wrap .main_wrap ul.member_list > li {
+  margin-bottom: 15px;
+}
+#member_wrap .main_wrap ul.member_list > li .top {
+  border-radius: 50px;
+  background: #272727;
+  border: 1px solid #434343;
+  padding: 12px 18px;
+}
+#member_wrap .main_wrap ul.member_list > li .top.active {
+  border-radius: 40px 40px 0 0;
+}
+#member_wrap .main_wrap ul.member_list > li .top.active .right .editor_open {
+  background: #191919;
+}
+#member_wrap .main_wrap ul.member_list > li .top .left {
+  display: inline-block;
+  width: 68%;
+}
+#member_wrap .main_wrap ul.member_list > li .top .left ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#member_wrap .main_wrap ul.member_list > li .top .left ul li input {
+  padding: 5px 20px;
+  background: #1a1a1a;
+  border-radius: 3px;
+  border: none;
+  height: 57px;
+  color: #fff;
+  width: 100%;
+}
+#member_wrap .main_wrap ul.member_list > li .top .left ul li .select_wrap {
+  position: relative;
+}
+#member_wrap .main_wrap ul.member_list > li .top .left ul li .select_wrap select {
+  padding: 5px 20px;
+  background: #1a1a1a;
+  border-radius: 3px;
+  border: none;
+  height: 57px;
+  color: #fff;
+  width: 100%;
+  padding: 5px 40px 5px 20px;
+}
+#member_wrap .main_wrap ul.member_list > li .top .left ul li .select_wrap:after {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  margin: auto;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-top: 3px solid #bebebe;
+  border-right: 3px solid #bebebe;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  pointer-events: none;
+}
+#member_wrap .main_wrap ul.member_list > li .top .left ul li.icon {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+#member_wrap .main_wrap ul.member_list > li .top .left ul li.icon img {
+  width: 100%;
+}
+#member_wrap .main_wrap ul.member_list > li .top .left ul li.icon label {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+#member_wrap .main_wrap ul.member_list > li .top .left ul li.icon label img {
+  opacity: 0.3;
+  width: 50px;
+  padding: 50px 0;
+}
+#member_wrap .main_wrap ul.member_list > li .top .left ul li.icon label input {
+  display: none;
+}
+#member_wrap .main_wrap ul.member_list > li .top .left ul li.name {
+  width: 150px;
+}
+#member_wrap .main_wrap ul.member_list > li .top .left ul li.email {
+  width: 300px;
+}
+#member_wrap .main_wrap ul.member_list > li .top .right {
+  display: inline-block;
+  width: 30%;
+  float: right;
+  padding: 10px 0;
+  text-align: right;
+}
+#member_wrap .main_wrap ul.member_list > li .top .right span {
+  display: inline-block;
+  padding: 10px 32px;
+  background: #2c589a;
+  border-radius: 50px;
+  vertical-align: middle;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+#member_wrap .main_wrap ul.member_list > li .top .right .btn_area {
+  display: inline-block;
+}
+#member_wrap .main_wrap ul.member_list > li .top .right .btn_area button {
+  margin: 0 5px;
+  padding: 9px;
+  border-radius: 50%;
+  width: 35px;
+  vertical-align: middle;
+  background: #267b2c;
+}
+#member_wrap .main_wrap ul.member_list > li .top .right .btn_area button.delete {
+  background: #9a3535;
+}
+#member_wrap .main_wrap ul.member_list > li .top .right .btn_area button img {
+  width: 100%;
+}
+#member_wrap .main_wrap ul.member_list > li .bottom {
+  border-radius: 0 0 3px 3px;
+  background: #272727;
+  border: 1px solid #434343;
+  padding: 20px 18px;
+  border-top: none;
+  display: none;
+}
+#member_wrap .main_wrap ul.member_list > li .bottom.active {
+  display: block;
+}
+#member_wrap .main_wrap ul.member_list > li .bottom dl dt, #member_wrap .main_wrap ul.member_list > li .bottom dl dd {
+  margin: 5px 0;
+}
+#member_wrap .main_wrap ul.member_list > li .bottom dl dt {
+  width: 60px;
+  margin-right: 10px;
+  display: inline-block;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.5);
+}
+#member_wrap .main_wrap ul.member_list > li .bottom dl dd {
+  width: calc(100% - 80px);
+  display: inline-block;
+}
+#member_wrap .main_wrap ul.member_list > li .bottom dl dd .authority_select {
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+  line-height: 60px;
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+}
+#member_wrap .member_add_modal {
+  z-index: 200;
+  position: fixed;
+  display: none;
+  bottom: 55%;
+  width: 700px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  border-radius: 5px;
+  border: 1px solid #969696;
+}
+#member_wrap .member_add_modal h2 {
+  text-align: center;
+  background: #696969;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  letter-spacing: 2px;
+}
+#member_wrap .member_add_modal .main_wrap {
+  background: #525252;
+  text-align: center;
+  border-top: 1px solid #969696;
+  border-bottom: 1px solid #969696;
+  padding: 20px;
+}
+#member_wrap .member_add_modal .main_wrap .icon {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #1a1a1a;
+  position: relative;
+  margin: 50px 0;
+  overflow: hidden;
+}
+#member_wrap .member_add_modal .main_wrap .icon img {
+  width: 100%;
+}
+#member_wrap .member_add_modal .main_wrap .icon label {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+#member_wrap .member_add_modal .main_wrap .icon label img {
+  opacity: 0.3;
+  width: 50px;
+  padding: 50px 0;
+}
+#member_wrap .member_add_modal .main_wrap .icon label input {
+  display: none;
+}
+#member_wrap .member_add_modal .main_wrap .input_wrap input, #member_wrap .member_add_modal .main_wrap .input_wrap select {
+  padding: 5px 20px;
+  background: #1a1a1a;
+  border-radius: 3px;
+  border: none;
+  height: 57px;
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  background: #1a1a1a;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+}
+#member_wrap .member_add_modal .main_wrap .input_wrap .select_wrap {
+  position: relative;
+}
+#member_wrap .member_add_modal .main_wrap .input_wrap .select_wrap:after {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  margin: auto;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-top: 3px solid #bebebe;
+  border-right: 3px solid #bebebe;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  pointer-events: none;
+}
+#member_wrap .member_add_modal .main_wrap p.note {
+  font-size: 11px;
+  text-align: left;
+}
+#member_wrap .member_add_modal .btn_wrap {
+  background: #696969;
+  padding: 20px;
+  text-align: center;
+}
+#member_wrap .member_add_modal .btn_wrap button {
+  display: inline-block;
+  background: #39ac41;
+  padding: 10px 0;
+  border-radius: 3px;
+  margin-right: 5px;
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 5px;
+  width: 200px;
+}

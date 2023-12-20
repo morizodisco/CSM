@@ -1,0 +1,20 @@
+.promotion_code_form{
+  padding: 20px;
+
+  dl{
+    dd{
+      width: 200px;
+      margin-bottom: 10px;
+
+      input{
+        width: 100%;
+      }
+    }
+  }
+
+  button{
+    padding: 10px;
+    background: #2196F3;
+    color: #fff;
+  }
+}

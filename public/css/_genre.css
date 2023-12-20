@@ -1,0 +1,90 @@
+#genre_wrap header input, #promotion_wrap header input {
+  width: 400px;
+  background-image: url(/images/search.svg);
+  background-size: 17px;
+  background-repeat: no-repeat;
+  padding-left: 16px;
+  background-position-x: 376px;
+  background-position-y: 7px;
+}
+#genre_wrap .genre_list > li, #promotion_wrap .genre_list > li {
+  border-radius: 50px;
+  background: #272727;
+  border: 1px solid #434343;
+  padding: 12px 18px;
+  margin-bottom: 15px;
+}
+#genre_wrap .genre_list > li ul li, #promotion_wrap .genre_list > li ul li {
+  display: inline-block;
+  margin-right: 7px;
+}
+#genre_wrap .genre_list > li ul li.name, #promotion_wrap .genre_list > li ul li.name {
+  width: 20%;
+}
+#genre_wrap .genre_list > li ul li.note, #promotion_wrap .genre_list > li ul li.note {
+  width: calc(75% - 1090px);
+}
+#genre_wrap .genre_list > li ul li.past_month, #promotion_wrap .genre_list > li ul li.past_month {
+  vertical-align: middle;
+}
+#genre_wrap .genre_list > li ul li input[type=text], #promotion_wrap .genre_list > li ul li input[type=text], #genre_wrap .genre_list > li ul li input[type=number], #promotion_wrap .genre_list > li ul li input[type=number] {
+  padding: 5px 20px;
+  background: #1a1a1a;
+  border-radius: 3px;
+  border: none;
+  height: 57px;
+  color: #fff;
+  width: 100%;
+}
+#genre_wrap .genre_list > li ul li input[type=color], #promotion_wrap .genre_list > li ul li input[type=color] {
+  padding: 10px;
+  background: #1a1a1a;
+  border-radius: 3px;
+  border: none;
+  width: 70px;
+  height: 57px;
+  vertical-align: middle;
+}
+#genre_wrap .genre_list > li ul li.code, #promotion_wrap .genre_list > li ul li.code {
+  margin-left: 23px;
+}
+#genre_wrap .genre_list > li ul li.code .code_num, #promotion_wrap .genre_list > li ul li.code .code_num {
+  width: 63px;
+  height: 57px;
+  background: #414141;
+  border-radius: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 57px;
+  text-align: center;
+  margin-left: 25px;
+}
+#genre_wrap .genre_list > li ul li .btn_area, #promotion_wrap .genre_list > li ul li .btn_area {
+  display: inline-block;
+}
+#genre_wrap .genre_list > li ul li .btn_area button, #promotion_wrap .genre_list > li ul li .btn_area button {
+  margin: 0 5px;
+  padding: 9px;
+  border-radius: 50%;
+  width: 35px;
+  vertical-align: middle;
+  background: #267b2c;
+}
+#genre_wrap .genre_list > li ul li .btn_area button.delete, #promotion_wrap .genre_list > li ul li .btn_area button.delete {
+  background: #9a3535;
+}
+#genre_wrap .genre_list > li ul li .btn_area button img, #promotion_wrap .genre_list > li ul li .btn_area button img {
+  width: 100%;
+}
+#genre_wrap .genre_list > li ul li .calendar_btn, #promotion_wrap .genre_list > li ul li .calendar_btn {
+  margin: 0 5px;
+  padding: 9px;
+  width: 35px;
+  vertical-align: middle;
+  background: #2e5b56;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#genre_wrap .genre_list > li ul li .calendar_btn img, #promotion_wrap .genre_list > li ul li .calendar_btn img {
+  width: 100%;
+}

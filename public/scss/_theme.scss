@@ -1,0 +1,48 @@
+$black: #000;
+
+@mixin arrow ($top: 10px,$right: 10px){
+  position: absolute;
+  top: $top;
+  right: $right;
+  margin: auto;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-top: 3px solid #bebebe;
+  border-right: 3px solid #bebebe;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  pointer-events: none;
+}
+
+@mixin form_base {
+  padding: 5px 20px;
+  background: #1A1A1A;
+  border-radius: 3px;
+  border: none;
+  height: 57px;
+  color: #fff;
+  width: 100%;
+}
+
+@mixin modal_base{
+  z-index: 200;
+  position: fixed;
+  display: none;
+  bottom: 55%;
+  width: 700px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  border-radius: 5px;
+  border: 1px solid #969696;
+}
+
+@mixin modal_title{
+  text-align: center;
+  background: #696969;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  letter-spacing: 2px;
+}

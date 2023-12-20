@@ -1,0 +1,110 @@
+@import "theme";
+
+#genre_wrap,#promotion_wrap{
+
+  header{
+    input{
+      width: 400px;
+      background-image: url(/images/search.svg);
+      background-size: 17px;
+      background-repeat: no-repeat;
+      padding-left: 16px;
+      background-position-x: 376px;
+      background-position-y: 7px;
+    }
+  }
+
+  .genre_list {
+    > li {
+      border-radius: 50px;
+      background: #272727;
+      border: 1px solid #434343;
+      padding: 12px 18px;
+      margin-bottom: 15px;
+
+      ul {
+        li {
+          display: inline-block;
+          margin-right: 7px;
+
+          &.name {
+            width: 20%;
+          }
+
+          &.note {
+            width: calc(75% - 1090px);
+          }
+
+          &.past_month{
+            vertical-align: middle;
+          }
+
+          input[type=text],input[type=number] {
+            @include form_base;
+          }
+
+          input[type=color]{
+            padding: 10px;
+            background: #1a1a1a;
+            border-radius: 3px;
+            border: none;
+            width: 70px;
+            height: 57px;
+            vertical-align: middle;
+          }
+
+          &.code{
+            margin-left: 23px;
+            .code_num{
+              width: 63px;
+              height: 57px;
+              background: #414141;
+              border-radius: 3px;
+              display: inline-block;
+              vertical-align: middle;
+              line-height: 57px;
+              text-align: center;
+              margin-left: 25px;
+            }
+          }
+
+          .btn_area {
+            display: inline-block;
+
+            button {
+              margin: 0 5px;
+              padding: 9px;
+              border-radius: 50%;
+              width: 35px;
+              vertical-align: middle;
+              background: #267B2C;
+
+              &.delete {
+                background: #9A3535;
+              }
+
+              img {
+                width: 100%;
+              }
+            }
+          }
+
+          .calendar_btn{
+            margin: 0 5px;
+            padding: 9px;
+            width: 35px;
+            vertical-align: middle;
+            background: #2e5b56;
+            border-radius: 5px;
+            cursor: pointer;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

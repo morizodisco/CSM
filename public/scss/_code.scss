@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+@import "theme";
+
+#code_wrap{
+
+  table{
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    tr{
+
+      &:first-child{
+        border-radius: 3px 3px 0 0;
+        th{
+          border-top: 1px solid #434343;
+          border-bottom: 1px solid #434343;
+          &:first-child{
+            border-radius: 3px 0 0 0;
+            border-left: 1px solid #434343;
+          }
+          &:last-child{
+            border-radius: 0 3px 0 0;
+            border-right: 1px solid #434343;
+          }
+        }
+      }
+      &:last-child {
+        td {
+          &:first-child {
+            border-radius: 0 0 0 3px;
+          }
+
+          &:last-child {
+            border-radius: 0 0 3px 0;
+          }
+        }
+      }
+
+      th{
+        background: #141414;
+        padding: 13px;
+        border-bottom: 1px solid #434343;
+        width: 7%;
+        height: 40px;
+      }
+
+      td{
+        padding: 20px;
+        background: #303030;
+        text-align: left;
+
+        &.left{
+          text-align: left;
+        }
+        &.right{
+          text-align: right;
+        }
+
+        input{
+          @include form_base;
+          height: 35px;
+          padding: 10px 20px;
+        }
+
+        input[type=checkbox]{
+          width: auto;
+          height: auto;
+          vertical-align: middle;
+        }
+
+        .select_wrap {
+          position: relative;
+
+          select {
+            @include form_base;
+            padding: 5px 40px 5px 20px;
+            height: 35px;
+          }
+
+          &:after {
+            @include arrow(13px);
+          }
+        }
+
+        .switch_wrap{
+          @extend .switch_wrap;
+
+          &.disabled{
+            input + label{
+              background-color: #789ec5;
+              &:after{
+                left: 32px;
+              }
+            }
+
+            input:checked + label{
+              background-color: #5a5a5a;
+              &:after{
+                left: 3px;
+              }
+            }
+          }
+        }
+
+        button,.calendar_btn {
+          padding: 9px;
+          border-radius: 50%;
+          width: 35px;
+          vertical-align: middle;
+          background: #267B2C;
+          cursor: pointer;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .calendar_btn{
+          background: #2e5b56;
+          border-radius: 5px;
+        }
+
+        a{
+          text-decoration: underline;
+          color: #757575;
+        }
+      }
+
+      &:nth-child(2n+1){
+        td{
+          background: #272727;
+        }
+      }
+
+    }
+  }
+
+  .log_list{
+    font-size: 11px;
+  }
+}
